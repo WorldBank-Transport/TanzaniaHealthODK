@@ -63,11 +63,11 @@
         <provider
             android:exported="true"
             android:name="tz.heath.collect.android.provider.FormsProvider"
-            android:authorities="org.heath.collect.android.provider.odk.forms" />
+            android:authorities="tz.health.collect.android.provider.odk.forms" />
         <provider
             android:exported="true"
             android:name="tz.heath.collect.android.provider.InstanceProvider"
-            android:authorities="org.heath.collect.android.provider.odk.instances" />
+            android:authorities="tz.health.collect.android.provider.odk.instances" />
 
         <activity
             android:name="tz.heath.collect.android.activities.MainMenuActivity"
@@ -218,7 +218,7 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="org.odk.collect.android.FormSaved" />
+                <action android:name="tz.health.collect.android.FormSaved" />
             </intent-filter>
         </receiver>
 
