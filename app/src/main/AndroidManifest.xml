@@ -54,7 +54,7 @@
         android:smallScreens="true" />
 
     <application
-        android:name="tz.heath.collect.android.application.Collect"
+        android:name=".application.Collect"
         android:largeHeap="true"
         android:icon="@drawable/notes"
         android:label="@string/app_name"
@@ -62,20 +62,20 @@
 
         <provider
             android:exported="true"
-            android:name="tz.heath.collect.android.provider.FormsProvider"
+            android:name=".provider.FormsProvider"
             android:authorities="tz.health.collect.android.provider.odk.forms" />
         <provider
             android:exported="true"
-            android:name="tz.heath.collect.android.provider.InstanceProvider"
+            android:name=".provider.InstanceProvider"
             android:authorities="tz.health.collect.android.provider.odk.instances" />
 
         <activity
-            android:name="tz.heath.collect.android.activities.MainMenuActivity"
+            android:name=".activities.MainMenuActivity"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="tz.heath.collect.android.activities.FormEntryActivity"
+            android:name=".activities.FormEntryActivity"
             android:configChanges="orientation"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustResize" >
@@ -90,22 +90,22 @@
             </intent-filter>
         </activity>
         <activity 
-            android:name="tz.heath.collect.android.activities.NotificationActivity"
+            android:name=".activities.NotificationActivity"
             android:label="@string/app_name"
             android:taskAffinity=""
             android:launchMode="singleTask"
             android:excludeFromRecents="true"
             />
         <activity
-            android:name="tz.heath.collect.android.activities.DrawActivity"
+            android:name=".activities.DrawActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.GoogleDriveActivity"
+            android:name=".activities.GoogleDriveActivity"
             android:label="@string/app_name" 
             android:windowSoftInputMode="stateHidden"
             />
         <activity
-            android:name="tz.heath.collect.android.activities.InstanceChooserList"
+            android:name=".activities.InstanceChooserList"
             android:label="@string/app_name" />
 
         <intent-filter>
@@ -118,10 +118,10 @@
         </intent-filter>
 
         <activity
-            android:name="tz.heath.collect.android.activities.InstanceChooserTabs"
+            android:name=".activities.InstanceChooserTabs"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.FormChooserList"
+            android:name=".activities.FormChooserList"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -134,22 +134,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="tz.heath.collect.android.activities.FormManagerList"
+            android:name=".activities.FormManagerList"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.FormDownloadList"
+            android:name=".activities.FormDownloadList"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.DataManagerList"
+            android:name=".activities.DataManagerList"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.FileManagerTabs"
+            android:name=".activities.FileManagerTabs"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.GoogleMapsEngineUploaderActivity"
+            android:name=".activities.GoogleMapsEngineUploaderActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.InstanceUploaderList"
+            android:name=".activities.InstanceUploaderList"
             android:label="@string/app_name">
 	        <intent-filter>
 	            <action android:name="android.intent.action.VIEW" />
@@ -159,38 +159,38 @@
 	        </intent-filter>
         </activity>
         <activity
-            android:name="tz.heath.collect.android.activities.InstanceUploaderActivity"
+            android:name=".activities.InstanceUploaderActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.preferences.PreferencesActivity"
+            android:name=".preferences.PreferencesActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.preferences.GMEPreferencesActivity"
+            android:name=".preferences.GMEPreferencesActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.preferences.OtherPreferencesActivity"
+            android:name=".preferences.OtherPreferencesActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.preferences.AggregatePreferencesActivity"
+            android:name=".preferences.AggregatePreferencesActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.preferences.AdminPreferencesActivity"
+            android:name=".preferences.AdminPreferencesActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.FormHierarchyActivity"
+            android:name=".activities.FormHierarchyActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.GeoPointActivity"
+            android:name=".activities.GeoPointActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.GeoPointMapActivity"
+            android:name=".activities.GeoPointMapActivity"
             android:label="@string/app_name" />
 
         <activity
-            android:name="tz.heath.collect.android.activities.BearingActivity"
+            android:name=".activities.BearingActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="tz.heath.collect.android.activities.SplashScreenActivity"
+            android:name=".activities.SplashScreenActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
@@ -202,7 +202,7 @@
         </activity>
         <!-- Enable Shortcuts for Command Actions -->
         <activity
-            android:name="tz.heath.collect.android.activities.AndroidShortcuts"
+            android:name=".activities.AndroidShortcuts"
             android:label="ODK Form"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" >
             <intent-filter>
@@ -212,7 +212,7 @@
             </intent-filter>
         </activity>
         <receiver
-            android:name="tz.heath.collect.android.receivers.NetworkReceiver"
+            android:name=".receivers.NetworkReceiver"
             android:enabled="true" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />

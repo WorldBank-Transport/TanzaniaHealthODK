@@ -3,7 +3,7 @@
     <PreferenceCategory
         android:key="@string/gme_preferences"
         android:title="@string/gme_preferences" >
-    <tz.heath.collect.android.views.DynamicListPreference
+    <tz.health.collect.android.views.DynamicListPreference
 	            android:id="@+id/gme_projectid"
 	            android:dialogTitle="@string/gme_project_id"
 	            android:key="gme_project_id"

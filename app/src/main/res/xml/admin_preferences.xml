@@ -14,7 +14,7 @@
         </intent>
     </Preference>
 
-    <tz.heath.collect.android.preferences.PasswordDialogPreference
+    <tz.health.collect.android.preferences.PasswordDialogPreference
         android:id="@+id/admin_pw"
         android:defaultValue=""
         android:dialogTitle="Change Admin Password"
