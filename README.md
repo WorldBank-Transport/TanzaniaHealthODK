@@ -10,7 +10,7 @@ This project uses the Gradle build system wich is a default build system in [And
 To create a signed apk for release build you can put
 
 
-    ODK_RELEASE_STORE_FILE=</path/to/keystore/file
+    ODK_RELEASE_STORE_FILE=/path/to/keystore/file
     ODK_RELEASE_STORE_PASSWORD=*********
     ODK_RELEASE_KEY_ALIAS=yourkeyallias
     ODK_RELEASE_KEY_PASSWORD=*********
