@@ -85,8 +85,8 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.odk.form" />
-                <data android:mimeType="vnd.android.cursor.item/vnd.odk.instance" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.tz.health.form" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.tz.health.instance" />
             </intent-filter>
         </activity>
         <activity 
@@ -114,7 +114,7 @@
 
             <category android:name="android.intent.category.DEFAULT" />
 
-            <data android:mimeType="vnd.android.cursor.dir/vnd.odk.instance" />
+            <data android:mimeType="vnd.android.cursor.dir/vnd.tz.health.instance" />
         </intent-filter>
 
         <activity
@@ -130,7 +130,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.dir/vnd.odk.form" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.tz.health.form" />
             </intent-filter>
         </activity>
         <activity
