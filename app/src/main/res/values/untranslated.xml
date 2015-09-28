@@ -13,7 +13,7 @@
 	<string translatable="false" name="protocol_google_maps_engine">google_maps_engine</string>
 	<string translatable="false" name="protocol_other">other_protocol</string>
 	<string translatable="false" name="default_server_url">http://54.174.203.255</string>
-	<string translatable="false" name="default_odk_formlist">/markiliffe/formList</string>
+	<string translatable="false" name="default_odk_formlist">/healthfacilities/formList</string>
 	<string translatable="false" name="default_odk_submission">/submission</string>
     <item name="mapview" type="id"/>
 </resources>
